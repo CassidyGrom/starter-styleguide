@@ -13,17 +13,17 @@ archive:
 	git commit -m "archive"
 	git push
 
-client: 
+client:
 	npm run depudding
-	
+
 # aws-assets:
-# 	aws s3 sync dist s3://pudding.cool/year/month/name --delete --cache-control 'max-age=31536000' --exclude 'index.html' --exclude 'main.js'
+# 	aws s3 sync dist s3://projects.nj.com/investigations/yourProject --delete --cache-control 'max-age=36000' --exclude 'index.html' --exclude 'bundle.js'
 
 # aws-htmljs:
-# 	aws s3 cp dist/index.html s3://pudding.cool/year/month/name/index.html
-# 	aws s3 cp dist/main.js s3://pudding.cool/year/month/name/main.js
+#	aws s3 cp dist/index.html s3://projects.nj.com/investigations/yourProject/index.html
+#	aws s3 cp dist/bundle.js s3://projects.nj.com/investigations/yourProject/bundle.js
 
 # aws-cache:
-# 	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths '/year/month/name*'	
+# 	aws cloudfront create-invalidation --distribution-id E2ECJQFLC2RUT0 --paths '/investigations/Joyce*'
 
-# pudding: aws-assets aws-htmljs aws-cache archive
+# njamdata: aws-assets aws-htmljs aws-cache archive
