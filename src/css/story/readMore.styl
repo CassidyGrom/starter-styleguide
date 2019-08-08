@@ -1,0 +1,39 @@
+.readMoreContainer
+  width 100%
+  .readMoreContainer__inner
+    width 90%
+    max-width $column-width
+    margin auto
+    position relative
+    .readMore__title
+      font-family "Alegreya Sans SC", sans-serif;
+      color $fp_yellow
+      text-align center
+      margin-bottom 1.5rem
+      background-color $fp_blue
+      text-transform uppercase
+    .readMore
+      width 100%
+      display inline-block
+      margin-bottom 1rem
+      border-bottom none
+      +mq('bp-4')
+        width calc(50% - 1.2rem)
+        margin-right 1rem
+      +mq('bp-5')
+        width calc(34% - 1rem)
+        vertical-align top
+        margin-right 0.5rem
+        margin-left 0rem
+      &:hover
+        color $fp_blue
+        & img
+          border 1px solid $fp_yellow
+
+      p
+        width 100%
+        display inline-block
+        margin-top 0.5rem
+        set-type-size('x-small')
+        +mq('bp-5')
+          set-type-size('x-small')

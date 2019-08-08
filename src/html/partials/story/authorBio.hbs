@@ -1,0 +1,21 @@
+{{#each copy.authorBio}}
+    <div class="row author">
+        {{#if portrait}}
+            <div class="col-4 col-md-3 ">
+                <div class="image-cropper">
+                    <img class="author-bio-img" src="{{{portrait}}}"/>
+                </div>
+            </div>
+            <div class="col-8 col-md-9 author-bio">
+                <p>{{{role}}}</p>
+                <div>{{{bio}}}</div>
+            </div>
+        {{else}}
+            <div class="col-12 author-bio">
+                <p>{{{role}}}</p>
+                <div>{{{bio}}}</div>
+            </div>
+        {{/if}}
+
+    </div>
+{{/each}}

@@ -1,0 +1,19 @@
+<footer class="section" id="footer_section">
+    {{> story/form}}
+    <div class="container footer">
+        <div class="footer_byline">
+            <p class="credits"><b>CREDITS</b> </p>
+            {{>story / authorBio}}
+            <p class="footNote">{{{copy.extraCredit}}}</p>
+            <p class="footNote">{{{copy.footNote}}}</p>
+            <p class="footNote">{{{copy.pubDate}}}</p>
+        </div>
+    </div>
+        {{> story/readMore}}
+    <div class="black_footer">
+        <div class="logo">
+            <a href="https://www.nj.com/"><img class="njam_logo" src="assets/images/njam_logo.png"/></a>
+        </div>
+    </div>
+</footer>
+

@@ -1,0 +1,43 @@
+.author
+  padding 0.5rem 1rem 1rem 0rem
+  display flex
+
+.image-cropper
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border 2px solid $gray-light
+  margin auto
+  +mq('bp-5')
+    width: 100px;
+    height: 100px;
+  img
+    display: inline;
+    height: 100%;
+    width: auto
+
+.author-bio
+  margin 0rem 0
+  background-color $off-white
+  border-top 3px solid $off-black
+  text-align left
+  padding 0.5rem 1rem
+
+  p
+    font-weight 900
+    margin 0.3rem 0
+    font-family: "Alegreya Sans SC", sans-serif;
+    text-transform: uppercase
+    color $off-black
+  div
+    set-type-size('xx-small')
+    padding-bottom 1rem
+    +mq('bp-5')
+      set-type-size('x-small')
+      line-height 1.5
+    a:hover
+      color $fp_blue
+      border-bottom 1px solid $off-black
+

@@ -7,12 +7,12 @@ set-type-class(all, true)
 	hidden(invisible)
 .hide-display
 	hidden()
-	
+
 // Skip to main for accessibility
 .skip-to-main
 	border none
 	hidden(accessible)
-	&:focus 
+	&:focus
 		width auto
 		height auto
 		background-color $off-white
@@ -36,3 +36,26 @@ set-type-class(all, true)
 #starter-guide
 	max-width 40rem
 	margin 0 auto
+	padding 0px 1rem 1rem 1rem
+	div.root
+		display: flex;
+		align-items: center;
+
+.colorBlock
+	width 3rem
+	height 3rem
+	display inline-block
+	margin-right 1rem
+	margin-bottom 0.5rem
+
+
+.nj_red
+	background $red
+.nj_gray
+	background $gray
+.nj_blue
+	background $blue
+.nj_orange
+	background $orange
+.nj_green
+	background $green

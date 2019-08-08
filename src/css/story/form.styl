@@ -1,0 +1,45 @@
+.form-container
+  text-align center
+  max-width $column-width
+  width 100%
+  margin auto
+  +mq('bp-4')
+    margin 4rem auto
+
+.form-container-inner
+  margin 0rem auto
+  background-color $off-black
+  color white
+  padding 1rem
+  width 100%
+
+  p
+    width 100%
+    margin 1rem auto
+    max-width $column-width
+    set-type-size('small')
+    +mq('bp-5')
+      font-size 14px
+  form
+    display inline
+    set-type-size('small')
+    +mq('bp-5')
+      font-size 14px
+    table
+      margin auto
+      max-width 300px
+      +mq('bp-5')
+        max-width 400px
+      tr
+        margin 1rem
+        padding 2rem
+
+        input[type="submit"]
+          background-color $fp_yellow
+          padding 0.3rem 0.6rem
+          color $fp_blue
+          font-weight 900
+
+        input[type="text"]
+          padding 0.2rem
+          margin 0.2rem

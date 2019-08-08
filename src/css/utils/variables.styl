@@ -6,26 +6,27 @@ $mq_vars = {
     bp-3: '(min-width: 30em)' // 480px
     bp-4: '(min-width: 40em)' // 640px
     bp-5: '(min-width: 50em)' // 800px
-		bp-6: '(min-width: 60em)' // 960px
+	bp-6: '(min-width: 60em)' // 960px
+	bp-7: '(min-width: 80em)' // 1280px
+	bp-8: '(min-width: 100em)' // 1600px
 }
 
+$benton = 'benton-sans-regular'
+$benton-hash = 'benton'
+$benton-bold = 'benton-sans-bold'
+$benton-bold-hash = 'benton-bold'
+$benton-medium = 'benton-sans-medium'
+$benton-medium-hash = 'benton-medium'
 // -------------------
 // Typefaces
 // -------------------
-$national = 'National 2 Web'
-$national-narrow = 'National 2 Narrow Web'
-$tiempos = 'Tiempos Text Web'
-$tiempos-hed = 'Tiempos Headline Web'
-$atlas = 'Atlas Grotesk Web'
-$publico = 'Publico Text Web'
-
 $sans-fb = Helvetica, Arial, sans-serif
 $serif-fb = Georgia, Times, serif
-$sans = $national, $sans-fb
-$sans-display = $national-narrow, $sans-fb
-$serif = $tiempos, $serif-fb
-$serif-display = $tiempos-hed, $serif-fb
-$mono = Menlo, Consolas, Monaco, 'Courier New', monospace
+$sans = $benton, $sans-fb
+$sans-display = $benton-medium, $sans-fb
+$serif = $serif-fb
+$serif-display = $serif-fb
+//$mono = Menlo, Consolas, Monaco, 'Courier New', monospace
 
 // z-index
 $z-index = {
@@ -37,12 +38,25 @@ $z-index = {
 
 // Color
 $black = #000
-$off-black = #282828
+$off-black = #404040
 $gray-dark = #5b5b5b
 $gray = #949494
 $gray-light = #c9c9c9
 $off-white = #f4f4f4
 $white = #fff
+// Color picker here: https://coolors.co/d30e14-345995-307fe2-ff9d00-bad131
+$green = #bad131
+$green-light = #C6D956
+$red = #d30e14
+$red-light = #DB393E
+$njam-gray = #4e4d4d
+$njam-gray-light = #eae8e8
+$blue = #307fe2
+$orange = #FF9D00
+$orange-light = #FFAE2E
+$blue-light = #5596E7
+$blue-dark = #345995
+$blue-dark-light = #5877A8
 
 $bg = #fff
 $fg = $off-black
@@ -65,7 +79,7 @@ $type-size = {
     }
     small: {
         size: 14px,
-        line-height: 1.65   
+        line-height: 1.65
     }
     root: {
         size: 16px,

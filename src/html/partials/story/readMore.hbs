@@ -1,0 +1,11 @@
+<div class="readMoreContainer">
+    <div class="readMoreContainer__inner">
+        <h4 class="readMore__title">More projects from NJ.com</h4>
+        {{#each copy.readMore}}
+            <a class="readMore" target="_blank" href={{url}}>
+                <img src="{{img}}">
+                <p>{{{title}}}</p>
+            </a>
+        {{/each}}
+    </div>
+</div>

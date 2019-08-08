@@ -1,0 +1,23 @@
+<div class="form-container">
+    <div class="form-container-inner">
+        <p>Enter your email address to receive updates about this project and future investigations:</p>
+        <form action="http://whatcounts.com/bin/listctrl" method="POST" role="form">
+            <input type="hidden" name="slid" value="6700EAF45F07D38EF8D28A9025F730B99F5EDC9A5AB4FEBA" />
+            <input type="hidden" name="subscribe" value="subscribe" />
+            <input type="hidden" name="goto" value="{{meta.url}}" />
+            <input type="hidden" name="errors_to" value="" />
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="email" name="email"/></td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <input type="hidden" id="format_html" name="format" value="html" />
+                        <!--<input type="button" class="btn btn-primary" value="Cancel" />-->
+                        <input id="subscribe-input" type="submit" value="Subscribe" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

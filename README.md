@@ -1,12 +1,12 @@
-# The Pudding Starter Template
+# NJAM Starter Template
 
-A starter template for projects.
+A starter template for projects adapted from [The Pudding] (https://github.com/the-pudding/starter).
 
 **If creating a brand new project from scratch:** Follow setup [instructions](#setup).
 
 **Else contributing to an existing project:** clone the repo andd run `npm install`).
 
-_Please note: do not use or reproduce The Pudding logos or fonts without written permission._
+_Note: I have swapped the logos and fonts to NJAM fonts. _
 
 ## Setup
 
