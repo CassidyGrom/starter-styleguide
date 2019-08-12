@@ -135,17 +135,14 @@ Checkout some of the auto-included files in `src/css/utils/` (`variables.styl`, 
 
 Fonts are loaded async and use the `font-display swap` CSS setting.
 
-- **Tiempos Text** (default `body` font)
-- **Tiempos Headline** (disabled by default)
-- **National**
-- **National Narrow**
-- **Publico Text** (disabled by default)
-- **Atlas Grotesk** (disabled by default)
+- **benton-sans-regular** (default `body` font)
+- **We are building a style guide. More fonts are coming.
 
 Variable names in stylus (use these for `font-family` since they contain proper fallbacks):
 
 - **Georgia**: `$serif`
 - **benton-sans-regular** `$sans`
+- **benton-sans-bold** `$benton-bold`
 
 ## Assets
 
