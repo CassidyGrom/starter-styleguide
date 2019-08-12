@@ -142,21 +142,10 @@ Fonts are loaded async and use the `font-display swap` CSS setting.
 - **Publico Text** (disabled by default)
 - **Atlas Grotesk** (disabled by default)
 
-Available font-weights (bold means it is loaded by default):
-
-- Tiempos Text: **500**, **700**
-- Tiempos Headline: 500
-- National: **500**, **700**
-- National Narrow: 200, **500**, **700**, 900
-- Publico: 400, 700
-- Atlas: 400, 500, 600
-
 Variable names in stylus (use these for `font-family` since they contain proper fallbacks):
 
-- **Tiempos Text**: `$serif`
-- **Tiempos Headline** `$serif-display`
-- **National** `$sans`
-- **National Narrow** `$sans-display`
+- **Georgia**: `$serif`
+- **benton-sans-regular** `$sans`
 
 ## Assets
 
