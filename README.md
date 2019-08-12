@@ -39,4 +39,4 @@ curl -Lk https://bit.ly/2J0L3MD > Makefile; make setup;
 
 #### Documentation
 
-See the generated [README](https://github.com/polygraph-cool/starter/blob/master/README.story.md#development) file in the new project directory for instructions.
+See the generated [README](https://github.com/njam-data/starter/blob/master/README.story.md#development) file in the new project directory for instructions.

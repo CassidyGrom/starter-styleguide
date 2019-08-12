@@ -19,6 +19,8 @@
   * [Launch Checklist](#launch-checklist)
  * [Future Proofing](#future-proofing)
 
+Note: I am still working to adapt it better for the NJAM data team. It is normal to encounter something weird. Please report bugs 🐛 to Yan Wu (ywu@njadvancemedia.com) so that I can fix them!
+
 # Development
 
 Run `npm start` to fire up the project server. `control + c` to stop.
@@ -50,7 +52,7 @@ Fill out `data/meta.json`
 
 ##### Analytics
 
-For The Pudding analytics use `UA-90567923-1`.
+For The NJAM-data analytics use `UA-116555959-1`.
 
 #### Copy
 
@@ -115,7 +117,7 @@ In the folder `src/js/utils` there a are a bunch of handy helper JS functions.
 
 #### Slider
 
-NoUISlider is included by default, with some preset pudding styles. To include it, simply include the library in your JS file `import noUiSlider from 'nouislider'`. Then in `src/css/config.styl`, uncomment `no-ui-slider.styl`.
+NoUISlider is included by default, with some preset styles. To include it, simply include the library in your JS file `import noUiSlider from 'nouislider'`. Then in `src/css/config.styl`, uncomment `no-ui-slider.styl`.
 
 #### Google Sheet
 
@@ -160,7 +162,7 @@ Variable names in stylus (use these for `font-family` since they contain proper 
 
 Put everything (images, audio, data, etc) in `src/assets/`.
 
-When deployed, assets paths will remain relative. _However_, you'll notice that in `index.hbs` there is a line like `<script src='{{basepath}}assets/scripts/d3.v5.9.1.min.js'></script>`. `basepath` here switches from nothing in local development, to `https://pudding.cool/` in production. We have a common assets folder for stuff like (which also occurs with fonts). If you need to use this project for a non-Pudding one, make sure to update the `data.basepath` variable in `scripts/html.js`.
+When deployed, assets paths will remain relative. _However_, you'll notice that in `index.hbs` there is a line like `<script src='{{basepath}}assets/scripts/d3.v5.9.1.min.js'></script>`. `basepath` here switches from nothing in local development, to `https://projects.nj.com/` in production. We have a common assets folder for stuff like (which also occurs with fonts). It's set at the `data.basepath` variable in `scripts/html.js`.
 
 # Deploy
 
@@ -182,9 +184,9 @@ Requirements:
 
 In `Makefile`, replace `year/month/name` with your own (eg. `2017/01/nba`). Uncomment code.
 
-Run `make pudding` to deploy and bust cache. If you only made changes to html/css/js, you can run `make aws-htmljs` then `make aws-cache` (it will be much quicker than re-uploading all your assets).
+Run `make njamdata` to deploy and bust cache. If you only made changes to html/css/js, you can run `make aws-htmljs` then `make aws-cache` (it will be much quicker than re-uploading all your assets).
 
-## Launch Checklist
+## Launch Checklist of The Pudding that we can learn to promote our work!
 
 - clean data: reduce filesize bloat by making sure you aren't loading unnecessary columns and rows.
 - remove console logs: aesthetics :smile:
@@ -193,7 +195,7 @@ Run `make pudding` to deploy and bust cache. If you only made changes to html/cs
 - create two social images:
   - Facebook: 1200 x 628 (`src/assets/social/social-facebook.jpg`)
   - Twitter: 1024 x 576 (`src/assets/social/social-twitter.jpg`)
-- Before launching, test the final pudding link in [Facebook Debugger](https://developers.facebook.com/tools/debug/sharing) to ensure all og tags are working properly.
+- Before launching, test the final link in [Facebook Debugger](https://developers.facebook.com/tools/debug/sharing) to ensure all og tags are working properly.
 - Create Twitter asset:
   - Motion works well on Twitter, so when possible use a scrolling video of the story (.MP4)
   - Tweets should always include some sort of visual asset
@@ -220,19 +222,7 @@ Run `make pudding` to deploy and bust cache. If you only made changes to html/cs
   - Tag people in the image if they are relevant
   - Keep in mind that you can only add one caption (even if there is a carousel of images)
   - The images in the carousel all have to be the same aspect ratio
-  - No need to tag authors here
-- Post to Patreon (Author posts)
-- Post to FotP (Author posts)
-- Add data to open data repo (with necessary metadata, scripts when possible)
-- Record Process video and post to FotP/Patreon (optional)
-- Make sure repo is on the-pudding
 - Update s3
-- Update homepage
-- Release assets - author can tap the promotion team to post assets, but otherwise expected that authors post.
-
-
-
-
 
 # Future Proofing
 Here are some best practices to follow to increase the likelihood that the story doesn't break in the near future.
