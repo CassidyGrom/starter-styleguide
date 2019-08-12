@@ -1,12 +1,10 @@
 # NJAM Starter Template
 
-A starter template for projects adapted from [The Pudding] (https://github.com/the-pudding/starter).
+A starter template for projects adapted from [The Pudding](https://github.com/the-pudding/starter).
 
-**If creating a brand new project from scratch:** Follow setup [instructions](#setup).
+**If creating a brand new project from scratch:** Follow setup.
 
-**Else contributing to an existing project:** clone the repo andd run `npm install`).
-
-_Note: I have swapped the logos and fonts to NJAM fonts. _
+Note: I have swapped the logos and fonts to NJAM fonts.
 
 ## Setup
 
@@ -28,14 +26,7 @@ _Note: I have swapped the logos and fonts to NJAM fonts. _
 
 ### Usage
 
-Use the [starter CLI](https://github.com/the-pudding/starter-cli).
-
-### Usage (deprecated)
-To create a new project, make a new directory (eg. `mkdir project-name`), `cd` into it, and run:
-
-```
-curl -Lk https://bit.ly/2J0L3MD > Makefile; make setup;
-```
+Still working on it. Currently the easiest way is to click on `Clone or download` -> Download ZIP. Then open the file on your terminal, run `npm install`.
 
 #### Documentation
 
