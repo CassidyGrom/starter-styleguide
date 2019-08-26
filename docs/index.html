@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en' data-version='1566827809350'>
+<html lang='en' data-version='1566829963987'>
 
 <head>
 
@@ -144,8 +144,7 @@ Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{valu
 		</div>
 		<div class="content">
 		    <article>
-		                <p class="article_p">The content below are just placeholders with little information about how to use it. <a href=https://github.com/the-pudding/starter/blob/master/README.story.md#development target=_blank>The detailed instructions are here</a>.</p>
-		                <p class="article_p">The starter-template I’ve been using for our projects. It lives in our team’s <a href=https://github.com/njam-data/starter target=_blank>Github repo</a>.</p>
+		                <p class="article_p">The content below are just placeholders with little information about how to use the <a href=https://github.com/njam-data/starter target=_blank>starter-template</a> to create stand-along graphics. <a href=https://github.com/the-pudding/starter/blob/master/README.story.md#development target=_blank>The detailed instructions of the template are here</a>. <strong>You don’t have to use the template to use the style guide below.</strong></p>
 		                <p class="article_p"><a target=blank href=https://docs.google.com/document/d/1CamcyGD9iDJAFFurnYSJInS_9e6DVp9VXRQh7CVC1CI/edit>The Google Doc used to host the content is located here.</a></p>
 		                <p class="article_p">To start working on your story, create a new Google Doc, get the id of that doc, replace the “id” in “config.json”. For this Google Doc, the id is the string on the URL between /d/ and /edit.</p>
 		                <p class="article_p">To learn more about coding with the template, <a href=https://github.com/the-pudding/starter/blob/master/README.story.md#development target=_blank>click here.</a></p>
@@ -155,32 +154,35 @@ Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{valu
 		</div>
 		<section id='starter-guide'>
 			<p>The color schemas below are suggestions for graphics. Feel free to be more creative when designing stand-along projects. </p>
+		    <p class='x-large'><strong>Font</strong></p>
+		    <p>We usually use "benton-sans-regular" for the main article to keep our style consistant with NJ.com articles. But you can get creative when styling the headline. </p>
+		    <p>For the main article, we use "medium" for large screen: <br/> "font-size: 18px; line-height: 1.65; margin: 1.5rem 0;". </p>
+		    <p>We use "root" for mobile: <br/> "font-size: 16px; line-height: 1.65; margin: 1.5rem 0;" </p>
 		    <p>Check out <strong>variables.styl</strong> for these definitions below. Check out <strong>guide.hbs</strong> to see how to use them.</p>
-		    <p>All the p tag share the same margin: 1.5rem 0. </p>
-			<p class='xxx-small'><strong>class "xxx-small"</strong> </p>
-			<p class='xx-small'><strong>class "xx-small" (font-size: 11px)</strong> </p>
-			<p class='x-small'><strong>class "x-small" (font-size: 12px)</strong> </p>
-			<p class='small'><strong>class "small" (font-size: 14px)</strong> </p>
-			<p class='root'><strong>class "root" (font-size: 16px)</strong> </p>
-			<p class='medium'><strong>class "medium" (font-size: 18px)</strong> </p>
-			<p class='large'><strong>class "large" (font-size: 20px)</strong> </p>
-			<p class='x-large'><strong>class "x-large" (font-size: 24px)</strong> </p>
-			<p class='xx-large'><strong>class "xx-large" (font-size: 32px)</strong> </p>
-			<p class='xxx-large'><strong>class "xxx-large" (font-size: 40px)</strong> </p>
-			<p class='xxxx-large'><strong>class "xxxx-large" (font-size: 48px)</strong> </p>
-		    <p class='xxxxx-large'><strong>class "xxxxx-large" (font-size: 64px)</strong> </p>
+			<p class='xxx-small'>class "xxx-small" </p>
+			<p class='xx-small'>class "xx-small" (font-size: 11px)</p>
+			<p class='x-small'>class "x-small" (font-size: 12px) </p>
+			<p class='small'>class "small" (font-size: 14px)</p>
+			<p class='root'>class "root" (font-size: 16px) </p>
+			<p class='medium'>class "medium" (font-size: 18px) </p>
+			<p class='large'>class "large" (font-size: 20px) </p>
+			<p class='x-large'>class "x-large" (font-size: 24px) </p>
+			<p class='xx-large'>class "xx-large" (font-size: 32px) </p>
+			<p class='xxx-large'>class "xxx-large" (font-size: 40px) </p>
+			<p class='xxxx-large'>class "xxxx-large" (font-size: 48px) </p>
+		    <p class='xxxxx-large'>class "xxxxx-large" (font-size: 64px) </p>
 		
+		    <p class='x-large'><strong>Color: </strong></p>
 		    <p class='root'>The colors below are presets for the starter-template.
 		        As the template uses <a href="http://stylus-lang.com/" target="_blank">Stylus</a> for css, I set a few build-in variables for easy access.
-		        The greenish color #BAD131 is nj.com brand color.
+		        The greenish color <span style="background-color: #BAD131">#BAD131</span> is nj.com brand color. So we try to invite a similar green into our color schemes.
 		    </p>
-		    <p class='x-large'><strong>Color: </strong> </p>
 		    <div class='root'><div class="nj_red colorBlock"></div> $red #D30E14</div>
 		    <div class='root'><div class="nj_blue colorBlock"></div> $blue #307FE2</div>
 		    <div class='root'><div class="nj_orange colorBlock"></div> $orange #FF9D00</div>
 		    <div class='root'><div class="nj_green colorBlock"></div> $green #BAD131</div>
 		    <div class='root'><div class="nj_gray colorBlock"></div> $njam-gray #4E4D4D</div>
-		    <p>Approximate colors:</p>
+		    <p>Approximate colors that you can choose:</p>
 		
 		    <div class='root'>
 		        <div class="colorBlock" style="background-color: #E36569"></div><p class="color__p">#E36569</p>
@@ -378,10 +380,9 @@ Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{valu
 	    </div>
 	</footer>
 	
-
-
+    
     <script src="https://d3js.org/d3.v5.min.js"></script>
-	<script src='main.js?version=1566827809350' async></script>
+	<script src='main.js?version=1566829963987' async></script>
 </body>
 
 </html>
